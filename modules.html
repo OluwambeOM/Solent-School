@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Modules - Solent School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <!-- Header Section (from index.html) -->
+    <header class="header">
+        <img src="./assets/header-pix.png" alt="Header Image" class="header-image">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://i.ibb.co/4116Ztw/solent-school-logo.png" alt="Solent School Logo" class="logo">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./index.html">About</a></li>
+                    <li><a href="./activities.html">Activities</a></li>
+                    <li><a href="./modules.html">Modules</a></li>
+                    <li><a href="./registrations.html" id="registration-button">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modules Section -->
+    <section class="modules-section">
+        <div class="container">
+            <!-- First Row with H1 heading and 2 paragraphs -->
+            <div class="row">
+                <h1>Modules</h1>
+                <p></p>At Solent School, our modules form the backbone of a dynamic and comprehensive academic curriculum designed to inspire, challenge, and empower students on their educational journey. Spanning a diverse range of subjects, from mathematics and science to humanities and the arts, our modules are crafted to foster intellectual curiosity, critical thinking, and a lifelong love of learning. With a focus on both breadth and depth of knowledge, students explore complex concepts, engage in hands-on experimentation, and develop essential skills applicable to real-world contexts. Our dedicated faculty members guide and support students through interactive lessons, stimulating discussions, and personalized feedback, ensuring each student reaches their full academic potential.</p>
+    
+            </div>
+            <!-- Second Row with Table -->
+            <div class="row">
+                <table id="modules-table" class="display">
+                    <thead>
+                        <tr>
+                            <th>Module ID</th>
+                            <th>Name</th>
+                            <th>Semester</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Module data -->
+                        <tr>
+                            <td>001</td>
+                            <td>Algebra I</td>
+                            <td>1</td>
+                            <td>Introduction to basic algebraic concepts</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>World History</td>
+                            <td>2</td>
+                            <td>Exploration of historical events and civilizations</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>English Literature</td>
+                            <td>1</td>
+                            <td>Analysis of literary works and critical thinking skills</td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>Biology</td>
+                            <td>3</td>
+                            <td>Study of living organisms and their ecosystems</td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Computer Science</td>
+                            <td>2</td>
+                            <td>Introduction to programming and digital literacy</td>
+                        </tr>
+                        <tr>
+                            <td>006</td>
+                            <td>Physical Education</td>
+                            <td>3</td>
+                            <td>Development of physical fitness and wellness</td>
+                        </tr>
+                        <tr>
+                            <td>007</td>
+                            <td>Art and Design</td>
+                            <td>1</td>
+                            <td>Exploration of artistic techniques and expression</td>
+                        </tr>
+                        <tr>
+                            <td>008</td>
+                            <td>Environmental Science</td>
+                            <td>2</td>
+                            <td>Understanding of environmental issues and sustainability</td>
+                        </tr>
+                        <tr>
+                            <td>009</td>
+                            <td>Foreign Language (Spanish)</td>
+                            <td>3</td>
+                            <td>Introduction to Spanish language and culture</td>
+                        </tr>
+                        <tr>
+                            <td>010</td>
+                            <td>Introduction to Psychology</td>
+                            <td>1</td>
+                            <td>Exploration of human behavior and mental processes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (from index.html) -->
+    <footer class="footer">
+        <!-- Column 1 -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>234, Our Address, Southampton, SO1 1AB.</p>
+            <p>All enquiries should be sent to <a href="mailto:info@solentschool.ac.uk">info@solentschool.ac.uk</a>.</p>
+            <p id="visitor-counter">Visitor Count: </p>
+        </div>
+        <!-- Column 2 -->
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p id="about-us-text">Solent School was founded to help nurture the best and brightest students across the UK and the world. Over the years, we have gone on to produce some of the most exceptional students across various fields of academics. Learn more.</p>
+            <select id="language-selector">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="chinese">Chinese</option>
+                <option value="dutch">Dutch</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+            </select>
+        </div>
+        <!-- Column 3 -->
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <img src="./assets/fb-icon.png" alt="Social Media Icons">
+            <img src="./assets/x-icon.png" alt="Social Media Icons">
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#modules-table').DataTable();
+        });
+    </script>
+</body>
+</html>
